@@ -148,18 +148,18 @@ $(document).ready(function() {
     var ganderImg = $('#ganderImg');
     $("input[name='gender']").change(function() {
         if ($("input[type='radio']:checked").val() == "male") {
-            ganderImg.attr('src', '../images/male.png');
+            ganderImg.attr('src', 'images/male.png');
         } else {
-            ganderImg.attr('src', '../images/female.png');
+            ganderImg.attr('src', 'images/female.png');
         }
-        var getUserUrl = ganderImg.attr('src');
-        var correctURLS = getUserUrl.replace('../', '');
-        localStorage.setItem('userImage', correctURLS);
+        var getUserUrl = ganderImg.attr('src'); 
+        localStorage.setItem('userImage', getUserUrl);
     });
 
     // set user image
     var getuserImg = $('#getuserImg');
     var getLocaluserImg = localStorage.getItem('userImage');
+    console.log(getLocaluserImg)
     getuserImg.attr('src', '' + getLocaluserImg + '');
 
     // Active Survey Number
