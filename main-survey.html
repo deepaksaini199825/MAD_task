@@ -1,171 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <!-- Custom css file init -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- font awesome css file include -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-    />
-  </head>
-  <body>
-    <!-- navigation bar section -->
-    <header class="header_sec">
-      <div class="container">
-        <!-- top navbar section -->
-        <div class="top_navbar">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="top_logo">
-                <a href="index.html">
-                  <img src="images/logo.png" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="setting">
-                <a href="#">Login</a>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <!-- Custom css file init -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- font awesome css file include -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+</head>
+
+<body>
+  <!-- navigation bar section -->
+  <header class="header_sec">
+    <div class="container">
+      <!-- top navbar section -->
+      <div class="top_navbar">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="top_logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="" />
+              </a>
             </div>
           </div>
-        </div>
-        <!-- menu header section -->
-      </div>
-
-      <!-- top navbar section -->
-      <div class="menubar">
-        <div class="container">
-          <div class="menubar">
-            <ul>
-              <li><a href="" class="menuActive">Main Survey</a></li>
-              <li><a href="">Food & Health</a></li>
-              <li><a href="">Food Labels & You</a></li>
-              <li><a href="">Fruits You Eat</a></li>
-              <li><a href="">Consumption & Expenditure</a></li>
-              <li><a href="">Veggies You Eat</a></li>
-            </ul>
+          <div class="col-md-6">
+            <div class="setting">
+              <a href="#"><span id="logiName"></span></a>
+            </div>
           </div>
         </div>
       </div>
       <!-- menu header section -->
-    </header>
-    <!-- navigation bar section -->
-    <div class="main_survey">
-      <div class="d_flex">
-        <div class="survey_pics">
-          <ul class="d_flex">
-            <li><img src="images/your-diet.png" alt="" /></li>
-            <li><img src="images/progress.png" alt="" /></li>
-          </ul>
-        </div>
-        <div class="survey_form flex_fill">
-          <h1 class="text-center"><span>Provide Your</span> Details</h1>
-          <form action="#">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form_group">
-                  <input type="text" class="form_control" placeholder="NAME" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form_group">
-                  <input
-                    type="text"
-                    class="form_control"
-                    placeholder="MOBILE"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form_group">
-                  <select type="text" class="form_control">
-                    <option value="">AGE</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form_group">
-                  <label for="">GENDER:
-                    <div class="d_flex">
-                      <label for="" class="flex_fill">
-                        <input type="radio">
-                        MALE
-                      </label>
-                      <label for="" class="flex_fill">
-                        <input type="radio">
-                        FEMALE
-                      </label>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </div>
+    </div>
 
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form_group">
-                  <select type="text" class="form_control">
-                    <option value="">SELECT YOUR COUNTRY</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form_group">
-                  <select type="text" class="form_control">
-                    <option value="">SELECT STATE</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form_group">
-                  <select type="text" class="form_control">
-                    <option value="">CITY</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form_group">
-                  <select type="text" class="form_control">
-                    <option value="">HOUSEOLD TYPE</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="provide_btn">COUNTINUE</button>
-          </form>
+    <!-- top navbar section -->
+    <div class="menubar">
+      <div class="container">
+        <div class="menubar">
+          <ul>
+            <li><a href="" class="menuActive">Main Survey</a></li>
+            <li><a href="">Food & Health</a></li>
+            <li><a href="">Food Labels & You</a></li>
+            <li><a href="">Fruits You Eat</a></li>
+            <li><a href="">Consumption & Expenditure</a></li>
+            <li><a href="">Veggies You Eat</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- footer section -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="footer_copy_head">
-              <p>
-                &copy; copyright 2019 by Center for Science and Environment. All
-                Rights Reserved
-              </p>
+    <!-- menu header section -->
+  </header>
+  <!-- navigation bar section -->
+  <div class="main_survey">
+    <div class="d_flex">
+      <div class="survey_pics">
+        <ul class="d_flex">
+          <li><img src="images/your-diet.png" alt="" /></li>
+          <li><img id="ganderImg" src="images/progress.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="survey_form flex_fill">
+        <h1 class="text-center"><span>Provide Your</span> Details</h1>
+        <form action="#">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_group">
+                <input type="text" class="form_control" placeholder="NAME" id="name" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form_group">
+                <input type="text" class="form_control" placeholder="MOBILE" id="mobile"/>
+              </div>
             </div>
           </div>
-          <div class="col-md-6"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_group">
+                  <input type="text" class="form_control" placeholder="AGE" id="age"/> 
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form_group">
+                <label for=""><span class="gender_name">GENDER:</span>
+                  <div class="d_flex">
+                    <div class="flex_fill gender_input">
+                      <input type="radio" id="huey" name="gender"  class="gender"  value="male">
+                      <label for="MALE">MALE</label>
+                    </div>
+
+                    <div class="flex_fill gender_input">
+                      <input type="radio" id="dewey" name="gender" class="gender"  value="female">
+                      <label for="FEMALE">FEMALE</label>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_group">
+                <select type="text" class="form_control" id="country">
+                  <option value="">SELECT YOUR COUNTRY</option>
+                  <option value="INDIA">INDIA</option> 
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form_group">
+                <select type="text" class="form_control" id="state">
+                  <option value="">SELECT STATE</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option> 
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_group">
+                <select type="text" class="form_control" id="city">
+                  <option value="">CITY</option>
+                  <option value="Delhi">Delhi</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form_group">
+                <select type="text" class="form_control" id="house">
+                  <option value="">HOUSEOLD TYPE</option>
+                  <option value="SIMPLE">SIMPLE</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="provide_btn" id="surveyForm">COUNTINUE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer_copy_head">
+            <p>&copy; copyright 2019 by Center for Science and Environment. All Rights Reserved</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="social_icon">
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fab fa-google-plus"></i></a></li>
+            <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <!-- footer section -->
+    </div>
+  </footer>
+  <!-- footer section -->
+  <!-- overlay -->
+  <div class="overlay"></div>
+  <!-- overlay -->
 
-    <!-- Jquery file include  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Custom JSS file init  -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Jquery file include  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Custom JSS file init  -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>

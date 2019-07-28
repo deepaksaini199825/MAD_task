@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- navigation bar section -->
@@ -29,7 +30,7 @@
             </div>
             <div class="col-md-6">
                 <div class="setting">
-                    <a href="#">Login</a>
+                    <a href="javascript:void(0)"><span id="loginpopup">Login</span></a>
                 </div>
             </div>
           </div>
@@ -42,7 +43,7 @@
         <div class="container">
             <div class="menubar">
                 <ul>
-                    <li><a href="">Main Survey</a></li>
+                    <li><a href="main-survey.html">Main Survey</a></li>
                     <li><a href="">Food & Health</a></li>
                     <li><a href="">Food Labels & You</a></li>
                     <li><a href="">Fruits You Eat</a></li>
@@ -109,12 +110,44 @@
                         <p>&copy; copyright 2019 by Center for Science and Environment. All Rights Reserved</p>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <ul class="social_icon">
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
     <!-- footer section -->
 
+    <!-- login poup section -->
+    <div class="login_wrap">
+        <div class="login_box">
+            <div class="closebtn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="login_head">
+                <h4>CSE</h4>
+            </div>
+            <div class="login_form">
+                <div class="form_group">
+                    <input type="text" placeholder="Username" id="username">
+                </div>
+                <div class="form_group">
+                    <input type="password" placeholder="Password" id="password">
+                </div>
+                <button type="button" id="loginform">Login</button>
+            </div>
+        </div>
+    </div>
+    <!-- login poup section -->
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <!-- overlay -->
 
 
 
