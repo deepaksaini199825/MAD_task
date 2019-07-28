@@ -1,0 +1,330 @@
+// Font initilaztion
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+
+// Theme color Setting
+$green_color: #6fba1c;
+$gray_color: #e1e1e1;
+$blue_color: #475bb6;
+$black_color: #2c2c2c;
+$darkgray_color: #9d9d9d;
+$white_color: #fff;
+
+$text-color: #676767;
+
+// reboot default css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+ul {
+  margin-bottom: 0px;
+  li {
+    list-style: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.d_flex {
+  display: flex;
+}
+.flex_fill {
+  flex-grow: 1;
+}
+.row {
+  display: flex;
+  padding: 0 -15px;
+}
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.col-md-4{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+// Navigation section css
+.header_sec {
+  background-color: $white_color;
+}
+.top_navbar {
+  padding: 15px 0;
+  a {
+    img {
+      width: 350px;
+    }
+  }
+}
+.menubar {
+  background-color: $gray_color;
+}
+.menubar {
+  ul {
+    li {
+      display: inline-block;
+      a {
+        color: $text-color;
+        display: block;
+        padding: 20px 35px;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+          background-color: $green_color;
+          color: $white_color;
+        }
+      }
+    }
+  }
+}
+.menuActive{
+    background-color: $green_color;
+    color: $white_color!important;
+}
+.setting {
+  a {
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+  }
+}
+
+// Banner section css
+.banner {
+  padding: 30px 0;
+  .banner_desc {
+    padding-top: 30px;
+    h2 {
+      color: #4a4a4a;
+      font-size: 44px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      line-height: 55px;
+      &:first-child {
+        font-weight: 300;
+        span {
+          color: $green_color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.banner_text {
+  margin: 20px 0;
+  h6 {
+    font-size: 1.8rem;
+    color: $darkgray_color;
+    font-weight: 300;
+  }
+}
+// survey_sec section css
+.survey_sec {
+  background-color: $green_color;
+  padding: 50px 0;
+}
+.survey_head {
+  h2 {
+    color: $white_color;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+    span{
+        display: block;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 3rem;
+    }
+  }
+}
+.survey_btn{
+    button{
+        background-color: $blue_color;
+        padding: 20px 30px;
+        color: $white_color;  
+        border: 0;
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-top: 100px;
+        display: block;
+        margin: 100px auto 0;
+    }
+}
+
+// footer section css
+.footer{
+    background-color: $black_color;
+    padding: 25px 0;
+    .footer_copy_head{
+        p{
+            color: $white_color;
+        }
+    }
+}
+
+
+// Main Survey Csss
+.main_survey{
+  height: 600px;
+    .survey_pics {
+        width: 35%;
+        background-color: $green_color;
+        display: flex;
+        justify-content: flex-end;
+        height: 600px;
+    }
+}
+label{
+  color: $darkgray_color;
+}
+.survey_form{
+  padding: 30px 50px;
+  h1{
+    color: $text-color;
+    font-size: 3.5rem;
+    span{
+      font-weight: 300;
+    }
+  }
+}
+form{
+  margin-top: 30px;
+}
+.form_control {
+    display: block;
+    width: 100%;
+    height: calc(4.25rem + 2px);
+    padding: .375rem .75rem; 
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid $darkgray_color; 
+    color: $darkgray_color;
+    &::placeholder {
+      font-size: 1.6rem;
+      color: $darkgray_color;
+    }
+}
+.form_group{
+  margin-bottom: 30px;
+}
+.provide_btn{
+  background-color: $blue_color;
+  width: 100%;
+  padding: 15px;
+  color: $white_color;
+  border: 0;
+}
