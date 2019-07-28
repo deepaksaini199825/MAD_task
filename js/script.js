@@ -36,7 +36,7 @@ $(document).ready(function() {
             return false;
         }
         if (username.val() == fetchData.username && password.val() == fetchData.password) {
-            location.pathname = '/main-survey.html';
+            window.location = 'https://deepaksaini199825.github.io/MAD_task/main-survey.html';
             localStorage.setItem('username', 'Hello admin');
         }
     });
