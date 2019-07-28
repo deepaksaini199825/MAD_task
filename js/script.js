@@ -148,13 +148,11 @@ $(document).ready(function() {
     var ganderImg = $('#ganderImg');
     $("input[name='gender']").change(function() {
         if ($("input[type='radio']:checked").val() == "male") {
-            ganderImg.attr('src', '../images/male.png');
+            ganderImg.attr('src', 'images/male.png');
         } else {
-            ganderImg.attr('src', '../images/female.png');
-        }
-        var getUserUrl = ganderImg.attr('src');
-        var correctURLS = getUserUrl.replace('../', '');
-        localStorage.setItem('userImage', correctURLS);
+            ganderImg.attr('src', 'images/female.png');
+        } 
+        localStorage.setItem('userImage', ganderImg);
     });
 
     // set user image
