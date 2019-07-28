@@ -61,7 +61,7 @@ $(document).ready(function() {
         });
         // location set on survey button
         $('#survey_btn').click(function() {
-            location.href = 'https://deepaksaini199825.github.io/MAD_task/main-survey.html';
+            window.location = 'https://deepaksaini199825.github.io/MAD_task/main-survey.html';
         })
 
     } else {
