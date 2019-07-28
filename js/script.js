@@ -1,14 +1,4 @@
-$(document).ready(function () {
-    // Open Login popup
-    $('#loginpopup').click(function () {
-        $('.login_wrap').toggleClass('openLoginPopup');
-        $('.overlay').show();
-    })
-    // Close Lofin Popup
-    $('.closebtn').click(function () {
-        $('.login_wrap').removeClass('openLoginPopup');
-        $('.overlay').hide();
-    });
+$(document).ready(function() {
     // store username and password in localstorage
     var loginData = {
         username: "admin",
@@ -19,7 +9,7 @@ $(document).ready(function () {
     // get Data in localStorage
     var getData = localStorage.getItem('login')
     // login 
-    $('#loginform').click(function () {
+    $('#loginform').click(function() {
         var fetchData = JSON.parse(getData);
         var username = $('#username');
         var password = $('#password');
@@ -41,13 +31,13 @@ $(document).ready(function () {
             return false;
 
         } else if (password.val() != fetchData.password) {
-            alert("password isn't match");
+            alert("Password isn't match");
             password.focus();
             return false;
         }
         if (username.val() == fetchData.username && password.val() == fetchData.password) {
             location.pathname = '/main-survey.html';
-            localStorage.setItem('username', 'admin');
+            localStorage.setItem('username', 'Hello admin');
         }
     });
     // get username
@@ -55,14 +45,42 @@ $(document).ready(function () {
     var logiName = $('#logiName').text(getUsername);
 
     // logout
-    $('#logiName').click(function () {
+    $('#logiName').click(function() {
         localStorage.removeItem('username');
-        location.href = 'https://deepaksaini199825.github.io/MAD_task/index.html'
+        location.href = 'http://127.0.0.1:5500/index.html'
     });
+
+    // set login button value
+    var setLoginValue = localStorage.getItem('username');
+    if (setLoginValue) {
+        $('#loginpopup').text(setLoginValue);
+        $('#survey_btn').removeAttr('disabled', '');
+        $('#loginpopup').click(function() {
+            localStorage.removeItem('username');
+            location.reload();
+        });
+        // location set on survey button
+        $('#survey_btn').click(function() {
+            location.href = 'http://127.0.0.1:5500/main-survey.html';
+        })
+
+    } else {
+        $('#loginpopup').text('Login');
+        // Open Login popup
+        $('#loginpopup').click(function() {
+            $('.login_wrap').toggleClass('openLoginPopup');
+            $('.overlay').show();
+        })
+        // Close Lofin Popup
+        $('.closebtn').click(function() {
+            $('.login_wrap').removeClass('openLoginPopup');
+            $('.overlay').hide();
+        });
+    }
 
 
     // Survey Validation
-    $('#surveyForm').click(function () {
+    $('#surveyForm').click(function() {
         var name = $('#name');
         var mobile = $('#mobile');
         var age = $('#age');
@@ -122,24 +140,45 @@ $(document).ready(function () {
             house.focus();
             return false;
         } else {
-            location.pathname = 'https://deepaksaini199825.github.io/MAD_task/screen3.html';
+            location.href = 'http://127.0.0.1:5500/screen3.html';
         }
     })
 
     // change img on select gender 
-    var ganderImg = $('#ganderImg'); 
-    $("input[name='gender']").change(function () { 
+    var ganderImg = $('#ganderImg');
+    $("input[name='gender']").change(function() {
         if ($("input[type='radio']:checked").val() == "male") {
             ganderImg.attr('src', '../images/male.png');
         } else {
             ganderImg.attr('src', '../images/female.png');
-        } 
-        var getUserUrl = ganderImg.attr('src'); 
-        localStorage.setItem('userImage', ganderImg.attr('src'));
-    }); 
+        }
+        var getUserUrl = ganderImg.attr('src');
+        var correctURLS = getUserUrl.replace('../', '');
+        localStorage.setItem('userImage', correctURLS);
+    });
 
     // set user image
     var getuserImg = $('#getuserImg');
     var getLocaluserImg = localStorage.getItem('userImage');
-    getuserImg.attr('src', ''+getLocaluserImg+'');
+    getuserImg.attr('src', '' + getLocaluserImg + '');
+
+    // Active Survey Number
+    $('#activeNumber > li > span').mouseover(function() {
+        $(this).parent().prevAll().children().addClass('active_number');
+        $(this).addClass('active_number');
+        $(this).parent().nextAll().children().removeClass('active_number');
+        $('.dishName ').removeClass('active_number');
+    });
+    $('#activeConsume > li> span').mouseover(function() {
+        $(this).parent().prevAll().children().removeClass('active_number');
+        $(this).addClass('active_number');
+        $(this).parent().nextAll().children().removeClass('active_number');
+    })
+
+    $('.landPage > li > span').click(function() {
+        location.href = 'http://127.0.0.1:5500/screen4.html';
+    })
+    $('.nextPage > li > span').click(function() {
+        location.href = 'http://127.0.0.1:5500/screen5.html';
+    })
 });

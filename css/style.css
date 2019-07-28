@@ -311,6 +311,7 @@ label {
 
 .survey_form {
   padding: 30px 50px;
+  background-color: #f1f1f1;
 }
 
 .survey_form h1 {
@@ -431,8 +432,8 @@ select {
           align-items: center;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: all ease-in-out .3s;
-  transition: all ease-in-out .3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .login_wrap .login_box {
@@ -514,5 +515,82 @@ select {
 
 .screen_head h1 {
   font-size: 30px !important;
+}
+
+.dish img {
+  margin-top: 50px;
+}
+
+.dish .cereal_name {
+  text-align: center;
+  color: #2c2c2c;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.dish_no {
+  padding: 50px;
+}
+
+.dish_no ul li {
+  display: inline-block;
+}
+
+.dish_no ul li span {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: #475bb6;
+  border-radius: 50%;
+  color: #fff;
+  padding: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.active_number {
+  background-color: #6fba1c !important;
+}
+
+.dishName {
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  color: #2c2c2c;
+}
+
+.consume_name {
+  margin-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.consume_name div {
+  background-color: #e1e1e1;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15px;
+  margin: 0 5px;
+}
+
+.active_consume_name div {
+  background-color: #6fba1c !important;
+  color: #fff !important;
 }
 /*# sourceMappingURL=style.css.map */
