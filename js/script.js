@@ -47,7 +47,7 @@ $(document).ready(function() {
     // logout
     $('#logiName').click(function() {
         localStorage.removeItem('username');
-        location.href = 'https://deepaksaini199825.github.io/MAD_task/index.html'
+        window.location = 'https://deepaksaini199825.github.io/MAD_task/index.html'
     });
 
     // set login button value
@@ -140,7 +140,7 @@ $(document).ready(function() {
             house.focus();
             return false;
         } else {
-            location.href = 'https://deepaksaini199825.github.io/MAD_task/screen3.html';
+            window.location = 'https://deepaksaini199825.github.io/MAD_task/screen3.html';
         }
     })
 
@@ -176,9 +176,9 @@ $(document).ready(function() {
     })
 
     $('.landPage > li > span').click(function() {
-        location.href = 'https://deepaksaini199825.github.io/MAD_task/screen4.html';
+        window.location = 'https://deepaksaini199825.github.io/MAD_task/screen4.html';
     })
     $('.nextPage > li > span').click(function() {
-        location.href = 'https://deepaksaini199825.github.io/MAD_task/screen5.html';
+        window.location = 'https://deepaksaini199825.github.io/MAD_task/screen5.html';
     })
 });
