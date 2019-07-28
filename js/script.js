@@ -151,8 +151,9 @@ $(document).ready(function() {
             ganderImg.attr('src', 'images/male.png');
         } else {
             ganderImg.attr('src', 'images/female.png');
-        } 
-        localStorage.setItem('userImage', ganderImg);
+        }
+        var getUserUrl = ganderImg.attr('src'); 
+        localStorage.setItem('userImage', getUserUrl);
     });
 
     // set user image
