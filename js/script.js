@@ -148,12 +148,13 @@ $(document).ready(function() {
     var ganderImg = $('#ganderImg');
     $("input[name='gender']").change(function() {
         if ($("input[type='radio']:checked").val() == "male") {
-            ganderImg.attr('src', 'images/male.png');
+            ganderImg.attr('src', '../images/male.png');
         } else {
-            ganderImg.attr('src', 'images/female.png');
+            ganderImg.attr('src', '../images/female.png');
         }
-        var getUserUrl = ganderImg.attr('src'); 
-        localStorage.setItem('userImage', getUserUrl);
+        var getUserUrl = ganderImg.attr('src');
+        var correctURLS = getUserUrl.replace('../', '');
+        localStorage.setItem('userImage', correctURLS);
     });
 
     // set user image
@@ -175,9 +176,9 @@ $(document).ready(function() {
     })
 
     $('.landPage > li > span').click(function() {
-        window.location = 'https://deepaksaini199825.github.io/MAD_task/screen4.html';
+        location.href = 'https://deepaksaini199825.github.io/MAD_task/screen4.html';
     })
     $('.nextPage > li > span').click(function() {
-        window.location = 'https://deepaksaini199825.github.io/MAD_task/screen5.html';
+        location.href = 'https://deepaksaini199825.github.io/MAD_task/screen5.html';
     })
 });
