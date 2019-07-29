@@ -589,7 +589,7 @@ select {
   margin: 0 5px;
 }
 
-.active_consume_name div {
+.active_consume_name {
   background-color: #6fba1c !important;
   color: #fff !important;
 }
